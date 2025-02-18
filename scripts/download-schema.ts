@@ -111,7 +111,7 @@ export function processV2Openapi(schema: any): any {
 
 export async function downloadV2Openapi() {
   const src =
-    "https://raw.githubusercontent.com/portone-io/public-api-service/main/schema/openapi.yml";
+    "https://raw.githubusercontent.com/portone-io/public-api-service/214d71dc47013504654fb5e9952fbe451ad7b5a9/schema/openapi.yml?token=GHSAT0AAAAAABZR3KLFMNIWFNJW3GHMUQBGZ5UD7NA";
   const dst = import.meta.resolve("../src/schema/v2.openapi.json");
   const token = await ensureLoggedIn();
   console.log(`스키마 위치: ${src}`);
